@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Expensify</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="main.js" defer></script>
+</head>
+<body>
+	<main>
+		<header>
+			<h1>Expense Tracker</h1>
+			<h3>Add A New Item:</h3>
+		</header>
+
+		<form id="form">
+			<div id="inputs">
+				<div class="input-area">
+					<label><b> Name: </b></label>
+					<input type="Text" id="name" placeholder="Where was the expense made?">
+				</div>
+				<div class="input-area">
+					<label><b> Date: </b></label>
+					<input type="Date" id="date">
+				</div>
+				<div class="input-area">
+					<label><b> Amount: </b></label>
+					<input type="Number" id="amount">
+				</div>
+			</div>
+			<div class="submit">
+				<input type="reset" id="reset" vale="Resetss">
+				<input type="submit" id="add" value="Add Expense">
+			</div>
+		</form>
+
+		<br>
+
+		<div class="table">
+			<table id="data">
+				<tr id="keys">
+					<td>Name</td>
+					<td>Date</td>
+					<td>Amount</td>
+					<td><button id="clear">Clear</button></td>
+				</tr>
+			</table>
+		</div>
+
+	</main>
+</body>
+</html>

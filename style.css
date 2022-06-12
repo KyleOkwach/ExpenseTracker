@@ -1,0 +1,109 @@
+:root {
+	font-family: monospace;
+	font-size: 14px;
+	--text-primary: #1f1f1f;
+	--text-secondary: #fff;
+	--bg-primary: #aeaeae;
+	--bg-secondary: green;
+}
+* {
+	padding: 0.2rem;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/*_____TOP_____*/
+header h1 {
+	font-weight: 0.5rem;
+	text-transform: uppercase;
+}
+header h3 {
+	color: var(--bg-secondary);
+}
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#inputs {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	justify-content: center;
+}
+#inputs div {
+	display: flex;
+}
+#inputs :first-child {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+#inputs #name {
+	width: 100%;
+}
+.submit {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+.submit input {
+	min-width: 7rem;
+	min-height: 3rem;
+}
+#add {
+	background: var(--bg-secondary);
+	color: var(--text-secondary);
+	border: none;
+	border-radius: 5px;
+	transition: all 0.1s ease;
+}
+#add:hover {
+	background: var(--bg-primary);
+	color: var(--text-primary);
+	border: 1px solid var(--bg-secondary);
+	cursor: pointer;
+}
+#reset {
+	background: red;
+	color: var(--text-secondary);
+	border: none;
+	border-radius: 5px;
+	transition: all 0.1s ease;
+}
+#reset:hover {
+	background: var(--bg-primary);
+	color: var(--text-primary);
+	border: 1px solid red;
+	cursor: pointer;
+}
+
+/*_____CONTENT_____*/
+.table {
+	display: flex;
+	justify-content: center;
+}
+.table tr {
+	display: flex;
+	box-shadow: 0px 2px 1px var(--text-primary);
+}
+.table .values{
+	border-bottom: 0.1px solid var(--text-primary);
+}
+.table td{
+	min-width: 9rem;
+}
+.table .values{
+	background: var(--bg-primary);
+	border-top: none;
+}
+.remove, #clear {
+	padding: 0.1rem;
+	border: none;
+	transition: 0.1s;
+	border-radius: 2px;
+}
+.remove:hover, #clear:hover{
+	background: var(--bg-secondary);
+	color: var(--text-secondary);
+	cursor: pointer;
+}
